@@ -1,0 +1,489 @@
+/* Universal styles */
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v26/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 1400px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: #D9D9D9;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    margin: 2% 0;
+    background-color: #404040;
+    color: #D9D9D9;
+    border-top: 2px solid #0D0D0D;
+    border-bottom: 2px solid #0D0D0D;
+    text-align: center;
+}
+
+.content h1 {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.content h2 {
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 850px) {
+    .content h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding: 0.75rem 0;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 0.75rem 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {   
+    .content h1 {
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    .content h2 {
+        font-size: 0.75rem;
+        font-weight: 400;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Header */
+header {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #A6A6A6;
+}
+
+header .center {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    margin: 0 2rem;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #0D0D0D;
+    padding: 0 2rem;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 850px) {
+    nav a {
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .logo {
+        display: none;
+    }
+    header {
+        width: 100%;
+        height: 3rem;
+    }
+
+    header .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        font-weight: 400;
+        padding: 0 0.75rem;
+    }
+}
+
+/* Mission Section */
+
+#mission-section {
+    background-image: url('../images/Background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.banner {
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    color: #0D0D0D;
+    text-align: center;
+    padding: 0 2.5rem;
+    margin: 16rem 0;
+    border-top: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+}
+
+.banner h1 {
+    margin: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.banner h2 {
+    margin: 0.5rem;
+    font-size: 1.5rem; 
+}
+
+@media only screen and (min-width: 570px) and (max-width: 850px) {
+    .banner {
+        padding: 0 1rem;
+        margin: 10rem 0;
+    }
+
+    .banner h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .banner h2 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .banner {
+        padding: 0 1rem;
+        margin: 8rem 0;
+    }
+
+    .banner h1 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .banner h2 {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+}
+
+/* Product Section */
+
+#products-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    width: 100%;
+    height: auto;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products img {
+    width: 30%;
+    margin: 1%;
+    border: 4px solid #FFFFFF;
+    border-radius: 4px;
+    height: auto;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 850px) {
+    .products {
+        align-items: stretch;
+    }
+
+    .products img {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .products {
+        align-items: stretch;
+    }
+
+    .products img {
+        width: 40%;
+    }
+}
+
+/* About Section */
+
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-grow: 1
+}
+
+.team {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.worker {
+    width: 40%;
+    height: auto;
+    margin: 2%;
+    text-align: center;
+}
+
+.worker img {
+    width: 100%;
+    height: auto;
+}
+
+.worker h2 {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0D0D0D;
+}
+
+.worker h3 {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #404040;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 850px) {
+    .worker h2 {
+        padding: 0.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .worker h3 {
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .team {
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .worker {
+        width: 90%;
+        height: auto;
+        margin: 2%;
+        text-align: center;
+    }
+    
+    .worker h2 {
+        padding: 0.25rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    .worker h3 {
+        padding: 0.25rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    flex: 0 0 100px;
+    margin-top: auto;
+    background-color: #A6A6A6;
+    color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #0D0D0D;
+    border-bottom: 2px solid #0D0D0D;
+}
+
+.contact-container {
+    width: 90%;
+    padding: 2% 5%;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details img {
+    width: 4rem;
+    height: auto;
+}
+
+.phone {
+    width: 40%;
+    display: flex;
+}
+
+.email {
+    width: 40%;
+    display: flex;
+}
+
+@media only screen and (min-width: 570px) and (max-width: 850px) {
+    .contact-container h2 {
+        padding: 0.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .contact-container h3 {
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .details img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .phone {
+        width: 50%;
+    }
+    
+    .email {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .contact-container h2 {
+        padding: 0.25rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    
+    .contact-container h3 {
+        padding: 0.25rem;
+        font-size: 0.7rem;
+    }
+
+    .details img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .phone {
+        width: 90%;
+    }
+    
+    .email {
+        width: 90%;
+    }
+}
