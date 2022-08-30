@@ -459,6 +459,16 @@ footer {
     flex-grow: 1;
 }
 
+.location {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.location h3 {
+    font-size: 1.5rem;
+}
+
 @media only screen and (min-width: 570px) and (max-width: 850px) {
     .contact-container h2 {
         padding: 0.25rem;
@@ -483,6 +493,12 @@ footer {
     .email {
         width: 50%;
     }
+
+    .location h3 h3 {
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 570px) {
@@ -508,5 +524,11 @@ footer {
     
     .email {
         width: 90%;
+    }
+
+    .location h3 {
+        padding: 0.25rem;
+        font-size: 0.6rem;
+        text-align: left;
     }
 }
