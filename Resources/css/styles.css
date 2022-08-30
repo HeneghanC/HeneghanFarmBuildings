@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1600px;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -72,6 +72,7 @@ h3 {
     margin: 0;
     padding: 1rem 0;
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     align-self: center;
 }
@@ -84,6 +85,7 @@ h3 {
     margin: 0;
     padding: 1rem 0;
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     align-self: center;
 }
@@ -121,6 +123,7 @@ header {
     width: 100%;
     min-height: 70px;
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
@@ -198,6 +201,7 @@ nav a {
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-grow: 1;
 }
 
 .banner {
@@ -262,6 +266,7 @@ nav a {
     width: 100%;
     height: auto;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -272,6 +277,7 @@ nav a {
     height: auto;
     background-color: #D9D9D9;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -311,13 +317,14 @@ nav a {
     width: 100%;
     height: auto;
     display: flex;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .team {
     width: 100%;
     height: auto;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -416,6 +423,7 @@ footer {
 .details {
     width: 100%;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -429,11 +437,13 @@ footer {
 .phone {
     width: 40%;
     display: flex;
+    flex-grow: 1;
 }
 
 .email {
     width: 40%;
     display: flex;
+    flex-grow: 1;
 }
 
 @media only screen and (min-width: 570px) and (max-width: 850px) {
