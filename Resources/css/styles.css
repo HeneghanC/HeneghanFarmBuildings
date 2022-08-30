@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1650px;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -42,10 +42,12 @@ main {
 h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 h2 {
     font-family: 'Lora', serif;
+    font-weight: 400;
 }
 
 h3 {
@@ -69,9 +71,11 @@ h3 {
     width: 100%;
     height: auto;
     font-size: 2rem;
+    font-weight: 700;
     margin: 0;
     padding: 1rem 0;
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     align-self: center;
 }
@@ -84,21 +88,27 @@ h3 {
     margin: 0;
     padding: 1rem 0;
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     align-self: center;
 }
 
 @media only screen and (min-width: 570px) and (max-width: 850px) {
     .content h1 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.5rem;
         padding: 0.75rem 0;
     }
 
     .content h2 {
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 400;
         padding: 0.75rem 0;
+    }
+
+    .content h3 {
+        padding: 0.25rem;
+        font-size: 1rem;
     }
 }
 
@@ -114,6 +124,11 @@ h3 {
         font-weight: 400;
         padding: 0.5rem 0;
     }
+
+    .content h3 {
+        padding: 0.25rem;
+        font-size: 0.7rem;
+    }
 }
 
 /* Header */
@@ -121,6 +136,7 @@ header {
     width: 100%;
     min-height: 70px;
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
@@ -198,6 +214,7 @@ nav a {
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-grow: 1;
 }
 
 .banner {
@@ -214,7 +231,7 @@ nav a {
 .banner h1 {
     margin: 0.5rem;
     font-size: 1.75rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .banner h2 {
@@ -229,13 +246,13 @@ nav a {
     }
 
     .banner h1 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.5rem;
     }
 
     .banner h2 {
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 400;
     }
 }
 
@@ -262,6 +279,7 @@ nav a {
     width: 100%;
     height: auto;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -272,6 +290,7 @@ nav a {
     height: auto;
     background-color: #D9D9D9;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -311,13 +330,14 @@ nav a {
     width: 100%;
     height: auto;
     display: flex;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .team {
     width: 100%;
     height: auto;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -416,6 +436,7 @@ footer {
 .details {
     width: 100%;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -429,11 +450,23 @@ footer {
 .phone {
     width: 40%;
     display: flex;
+    flex-grow: 1;
 }
 
 .email {
     width: 40%;
     display: flex;
+    flex-grow: 1;
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.location h3 {
+    font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 570px) and (max-width: 850px) {
@@ -460,6 +493,12 @@ footer {
     .email {
         width: 50%;
     }
+
+    .location h3 h3 {
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 570px) {
@@ -485,5 +524,11 @@ footer {
     
     .email {
         width: 90%;
+    }
+
+    .location h3 {
+        padding: 0.25rem;
+        font-size: 0.6rem;
+        text-align: left;
     }
 }
