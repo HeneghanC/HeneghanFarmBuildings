@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    max-width: 1650px;
+    max-width: 2000px;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -462,11 +462,15 @@ footer {
 .location {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     flex-grow: 1;
 }
 
 .location h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+    text-align: center;
 }
 
 @media only screen and (min-width: 570px) and (max-width: 850px) {
@@ -494,7 +498,7 @@ footer {
         width: 50%;
     }
 
-    .location h3 h3 {
+    .location h3 {
         padding: 0.25rem;
         font-size: 1rem;
     }
